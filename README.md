@@ -1,6 +1,6 @@
 # ros2_cmake_test
 
-Trying to make a ROS 2 node (bar) depending on a pure cmake package (foo) using colcon.
+Trying to compile a ROS 2 node (bar) depending on a pure cmake package (foo) using colcon.
 
 Compile with:
 ```
