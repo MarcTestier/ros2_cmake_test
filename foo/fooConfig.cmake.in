@@ -1,0 +1,6 @@
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${CMAKE_CURRENT_LIST_DIR}/fooTargets.cmake")
+
+# These are IMPORTED targets created by fooTargets.cmake
+set(FOO_LIBRARIES foo::foo)
+
