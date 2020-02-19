@@ -1,19 +1,13 @@
 # ros2_cmake_test
 
-Trying to compile a ROS 2 node (bar) depending on a pure cmake package (foo) using colcon,
-the compilation fails with the following error:
+Simple example compiling a ROS 2 node (bar) depending on a pure cmake package (foo) using colcon.
 
-```
-<...>/bar.hpp:5:10: fatal error: foo/foo.hpp: No such file or directory
-#include "foo/foo.hpp"
-```
+(Repo originally made for [this question](https://answers.ros.org/question/344399/trying-to-compile-a-ros-2-eloquent-package-depending-on-a-pure-cmake-package-using-colcon/))
 
+## Installation
 
-Compile with:
+Install ROS2, create a workspace, clone the repo and compile with:
 ```
 colcon build --symlink-install
 ```
 
-## NOTE:
-
-If you use `CMakeLists2.txt`, in the `bar` folder, which link directly against the `.so` file, the compilation works

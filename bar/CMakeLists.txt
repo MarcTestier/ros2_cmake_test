@@ -26,7 +26,7 @@ include_directories(include ${INCLUDE_DIRS})
 ## Declare a cpp executable
 add_executable(Bar src/bar.cpp)
 ament_target_dependencies(Bar rclcpp)
-target_link_libraries(Bar foo)
+target_link_libraries(Bar foo::foo)
 
 install(TARGETS Bar
   EXPORT export_${PROJECT_NAME}
